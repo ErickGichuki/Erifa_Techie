@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import { Routes,Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import Cart from './components/Cart';
+import Info from './components/Info';
 
 
 function App() {
@@ -26,9 +27,6 @@ function App() {
         path='/info'
         element={<Info />}
         />
-
-        
-
       </Routes>
     </>
   )
