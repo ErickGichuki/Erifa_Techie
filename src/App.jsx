@@ -5,11 +5,13 @@ import { Routes,Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import Cart from './components/Cart';
 
+
 function App() {
 
   return (
     <>
       <Navbar/>  
+
       <Routes>
         <Route
         path='/'
@@ -19,10 +21,17 @@ function App() {
         <Route 
         path='/cart'
         element={<Cart/>}
+        /> 
+        <Route 
+        path='/info'
+        element={<Info />}
         />
+
+        
+
       </Routes>
     </>
   )
 }
 
-export default App
+export default App;
